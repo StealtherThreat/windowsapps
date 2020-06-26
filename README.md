@@ -5,17 +5,17 @@
 
 ### Getting all Installed Applicatons
 ```python
-import WindowsApps
+import windowsapps
 
-installed_applications = WindowsApps.get_apps() 
+installed_applications = windowsapps.get_apps() 
 #Gives Dictionary of Application names along with their AppID
 ```
 
 ### Getting the Name, AppId for a particular application
 ```python
-import WindowsApps
+import windowsapps
 
-name, appid = WindowsApps.find_app('APPLICATION NAME')
+name, appid = windowsapps.find_app('APPLICATION NAME')
 #searches for the APPLICATION NAME and returns:-
 #name = Name of the application.
 #appid = AppId of the application
@@ -23,7 +23,7 @@ name, appid = WindowsApps.find_app('APPLICATION NAME')
 
 ### Open an application
 ```python
-import WindowsApps
+import windowswpps
 
 WindowsApps.open_app('APPLICATION NAME')
 #Will search for the application APPLICATION NAME and open it.
