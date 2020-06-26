@@ -1,6 +1,11 @@
 # windowsapps - Python library for managing installed applications on Windows
 [![License](https://img.shields.io/github/license/StealtherThreat/WindowsApps)](https://opensource.org/licenses/MIT)
 
+## Installation
+To install `windowsapps` from PyPi run:
+```shell
+pip install windowsapps
+```
 ## Usage
 
 ### Getting all Installed Applicatons
