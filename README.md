@@ -1,4 +1,4 @@
-# WindowsApps - Python library for managing installed applications on Windows
+# windowsapps - Python library for managing installed applications on Windows
 [![License](https://img.shields.io/github/license/StealtherThreat/WindowsApps)](https://opensource.org/licenses/MIT)
 
 ## Usage
@@ -23,9 +23,9 @@ name, appid = windowsapps.find_app('APPLICATION NAME')
 
 ### Open an application
 ```python
-import windowswpps
+import windowsapps
 
-WindowsApps.open_app('APPLICATION NAME')
+windowsapps.open_app('APPLICATION NAME')
 #Will search for the application APPLICATION NAME and open it.
 ```
 
