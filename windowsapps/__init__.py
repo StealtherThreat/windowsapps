@@ -15,7 +15,11 @@ def find_app(app_name):
 			return each,apps[each]
 
 def open_app(app_name):
-	call("powershell.exe start 'shell:AppsFolder\%s'"%find_app(app_name)[1])
+	app = find_app(app_name)
+	if app == None:
+		raise ValueError('Application not found!')
+	else:
+		call("powershell.exe start 'shell:AppsFolder\%s'"%app[1])
 
 if __name__ == "__main__":
-    open_app('calculator')
+    open_app("Calculator")
