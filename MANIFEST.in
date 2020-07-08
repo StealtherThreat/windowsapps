@@ -1,0 +1,3 @@
+include windowsapps/*.ps1
+include windowsapps/*.vbs
+include windowsapps/*.json

@@ -1,0 +1,1 @@
+Get-StartApps|convertto-json|Out-File -Filepath temp.json
