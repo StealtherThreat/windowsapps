@@ -2,7 +2,7 @@ from json import loads
 from subprocess import check_output, call
 
 def get_apps():
-	apps = loads(check_output(['powershell.exe','Get-StartApps|convertto-json']))
+	apps = loads(check_output(['powershell.exe','Get-StartApps|convertto-json'],shell=False))
 	names = {}
 	for each in apps:
 		names.update({each['Name']:each['AppID']})
@@ -19,7 +19,7 @@ def open_app(app_name):
 	if app == None:
 		raise ValueError('Application not found!')
 	else:
-		call("powershell.exe start 'shell:AppsFolder\%s'"%app[1])
+		call("powershell.exe start 'shell:AppsFolder\%s'"%app[1],shell=False)
 
 if __name__ == "__main__":
     open_app("Calculator")

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="windowsapps",
-    version="0.0.2",
+    version="0.0.3",
     author="Tushar Goyal",
     author_email="StealtherThreat@outlook.com",
     description="Windows Apps for python",
