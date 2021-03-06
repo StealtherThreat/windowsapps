@@ -35,7 +35,6 @@ windowsapps.open_app('APPLICATION NAME')
 ```
 
 ## Caveats
-This library will works for all applications installed on the PC including Windows Store Applications.
+This module will works for all applications installed on the PC including Windows Store Applications.
 Works perfectly fine on Windows 10.
-Use json & subprocess modules to work.
 
