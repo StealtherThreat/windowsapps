@@ -3,7 +3,7 @@ from subprocess import getoutput
 from os import startfile
 
 def get_apps():
-	cmd = 'powershell "Get-StartApps|convertto-json"'
+	cmd = 'powershell -ExecutionPolicy Bypass "Get-StartApps|convertto-json"'
 	apps=loads(getoutput(cmd))
 	names = {}
 	for each in apps:
@@ -24,3 +24,6 @@ def open_app(app_name):
 		raise ValueError('Application not found!')
 	else:
 		startfile('shell:AppsFolder\%s'%app[1])
+
+if __name__=='__main__':
+        find_app('stealth pc monitor')
